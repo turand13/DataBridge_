@@ -22,7 +22,7 @@
 Требуется Python 3.10+.
 
 ```bash
-git clone <url> databridge
+git clone https://github.com/turand13/DataBridge_ databridge
 cd databridge
 
 python -m venv .venv
