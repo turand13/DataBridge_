@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>DataBridge — отчёт о валидации</title>
+<style>
+  body { font-family: sans-serif; margin: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+  th, td { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: left; }
+  th { background: #f0f0f0; }
+  .ok { color: #1a7f37; }
+  .err { color: #b42318; }
+</style>
+</head>
+<body>
+<h1>Отчёт о валидации</h1>
+<p>Сформирован: 19-11-2026 15:53:33</p>
+<ul>
+  <li>Всего записей: <b>1000</b></li>
+  <li>Успешно обработано: <b class="ok">900</b></li>
+  <li>Ошибок: <b class="err">100</b></li>
+</ul>
+<h2>Ошибки</h2>
+<table>
+<thead><tr><th>Запись</th><th>Поле</th><th>Сообщение</th></tr></thead>
+<tbody>
+<tr><td>7</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>9</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>13</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>34</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>44</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>56</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>81</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>104</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>110</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>123</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>124</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>132</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>160</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>179</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>188</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>192</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>195</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>205</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>208</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>212</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>216</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>228</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>235</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>241</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>243</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>248</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>256</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>266</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>270</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>272</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>276</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>282</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>287</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>323</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>324</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>334</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>356</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>365</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>371</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>381</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>389</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>404</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>408</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>434</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>469</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>472</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>483</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>490</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>494</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>503</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>505</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>511</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>515</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>524</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>531</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>539</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>554</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>555</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>562</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>589</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>591</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>595</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>628</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>629</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>634</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>636</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>680</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>691</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>693</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>700</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>703</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>706</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>716</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>754</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>755</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>765</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>769</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>783</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>795</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>798</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>819</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>855</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>857</td><td>id</td><td>поле &#x27;id&#x27; должно быть уникальным (повтор значения из записи 1)</td></tr>
+<tr><td>869</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>878</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>882</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>883</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>890</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>894</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>903</td><td>email</td><td>поле &#x27;email&#x27; не соответствует формату</td></tr>
+<tr><td>919</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>920</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+<tr><td>932</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>938</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>943</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>953</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>966</td><td>age</td><td>поле &#x27;age&#x27; больше максимума (100)</td></tr>
+<tr><td>969</td><td>name</td><td>поле &#x27;name&#x27; обязательно</td></tr>
+<tr><td>970</td><td>age</td><td>поле &#x27;age&#x27; меньше минимума (16)</td></tr>
+<tr><td>1000</td><td>birth_date</td><td>поле &#x27;birth_date&#x27; должно быть date</td></tr>
+</tbody>
+</table>
+</body>
+</html>

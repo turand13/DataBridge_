@@ -1,0 +1,40 @@
+fields:
+  - name: id
+    type: integer
+    required: true
+    unique: true
+
+  - name: name
+    type: string
+    required: true
+
+  - name: email
+    type: string
+    required: true
+    pattern: '^[^@\s]+@[^@\s]+\.[^@\s]+$'
+
+  - name: age
+    type: integer
+    min: 16
+    max: 100
+
+  - name: birth_date
+    type: date
+    format: "YYYY-MM-DD | DD-MM-YYYY | DD.MM.YYYY | YYYY.MM.DD"
+
+mapping:
+  full_name: name
+  e_mail: email
+
+transforms:
+  name: [trim, upper]
+  email: [trim, lower]
+  status: [dict_replace]
+
+dict_replace:
+  status:
+    active: "ACTIVE"
+    inactive: "INACTIVE"
+  gender:
+    m: "M"
+    f: "F"

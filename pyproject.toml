@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "databridge"
+version = "0.1.0"
+description = "Утилита для чтения, валидации и конвертации данных"
+requires-python = ">=3.10"
+dependencies = [
+    "openpyxl",
+    "pyyaml",
+]
+
+[project.scripts]
+databridge = "cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cli*", "readers*", "writers*", "reporters*", "validators*", "converters*"]
+exclude = ["samples*", "tests*", "docs*"]
